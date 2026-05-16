@@ -590,11 +590,11 @@
                   <label class="mt-2 ms-3 me-3">Ciclo:</label>
                   <select
                     class="form-control chosen-select"
-                    data-placeholder="Seleccione una opción"
-                    id="DDLModulo"
-                    name="DDLModulo"
+  id="DDLModulo"
+  name="DDLModulo"
+  onchange="redirigirPagina()"
                   >
-                    <option selected="selected" value="01 2024" id="periodo" >02 2025</option>
+                    <option selected="selected" value="02 2025" >02 2025</option>
                     <option value="https://iiudb.github.io/Notas/">01 2026</option>
                     <option value="02 2024">03 2025</option>
                     <option value="02 2024">01 2025</option>
@@ -716,13 +716,7 @@
                     <option value="02 1986">02 1986</option>
                     <option value="01 1986">01 1986</option>
                   </select>
-                  <script>
-  document.getElementById("periodo").addEventListener("change", function () {
-    if (this.value !== "") {
-      window.location.href = this.value;
-    }
-  });
-</script
+                 
                 </form>
               </li>
             </ul>
