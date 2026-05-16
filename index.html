@@ -716,7 +716,14 @@
                     <option value="02 1986">02 1986</option>
                     <option value="01 1986">01 1986</option>
                   </select>
-                 
+                 <script>
+  function redirigirPagina() {
+    var select = document.getElementById("DDLModulo");
+    var pagina = select.value;
+
+    window.location.href = pagina;
+  }
+</script>
                 </form>
               </li>
             </ul>
